@@ -1,10 +1,111 @@
-<html>
-<head> 
-  <title>Hello!</title>
-  <link href="hikkman.github.io/css/style.css" rel="stylesheet">
-</head>
-
+<!DOCTYPE HTML> 
+<head>
+	<title>Home page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta http-equiv="refresh" content="5"> -->
+	<link rel="stylesheet" href="assets/css/general.css">
+	<link rel="stylesheet" href="assets/css/structure.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Open+Sans&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.show{display:block;}
+		.inverseRotate{transform: rotate(-45deg);}
+</style>
 <body>
-  <h1>Hello world!</h1>
+
+<div class="hero bg">
+	<div class="ripple"></div>
+	<header>
+		<div class="container">
+			<span onclick="openSidenav()" class="btnSidenav"><i class="fa fa-bars"></i></span>
+			<a href="index.html" class="logo">
+				Kadie
+			</a>
+
+			<nav class="sidenav" id="sidenav">
+				<div class="logo">
+					Kadie
+					<span onclick="closeSidenav()" class="btnSidenav"><i class="fa fa-times"></i></span>
+				</div>
+
+				<div class="account" onclick="subSide('account', 'chevAccount')">
+					<div class="d-flex" style="align-items: center;">
+						<img src="assets/img/account/tiks.jpg">
+						<div>
+							<p>Welcome,</p>
+							<span>Hikman</span>
+						</div>
+					</div>
+
+					<div class="subSide" id="account">
+						<a href="#">Profile</a>
+						<a href="#">Dashboard</a>
+						<a href="#">Pengaturan</a>
+						<a href="#">Logout</a>
+					</div>
+
+					<span class="chevronDown">
+						<i class="fa fa-chevron-down" id="chevAccount"></i>
+					</span>
+				</div>
+				<a href="index.html" class="active"><i class="fa fa-home"></i>Home</a>
+				<a href="#" onclick="subSide('category', 'chevCategory')">
+					<i class="fa fa-layer-group"></i>
+					Kategori
+					<span class="chevronDown">
+						<i class="fa fa-chevron-down" id="chevCategory"></i>
+					</span>
+				</a>
+				<div class="subSide" id="category">
+						<a href="#">Profile</a>
+						<a href="#">Dashboard</a>
+						<a href="#">Pengaturan</a>
+						<a href="#">Logout</a>
+					</div>
+				<a href="#"><i class="fa fa-rss-square"></i>Blog</a>
+				<a href="#"><i class="fa fa-address-card"></i>Tentang</a>
+				<a href="#"><i class="fa fa-phone"></i>Kontak</a>
+			</nav>
+
+			<div class="user">
+				<a href="#" class="btn shadow1 harmonic" style="margin-left:25px;">Login</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="jumbotron">
+		<div class="container">
+			<div class="slogan">
+				<span>Astana, E-learning for highschool</span>
+				<h1 class="tittle">Belajar Semakin mudah !</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt
+					ut labore et dolore magna aliqua Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris.
+				</p>
+				<a href="#" class="btn shadow1 harmonic heading">START</a>
+			</div>
+			<img src="assets/img/bg.png" class="banner">
+		</div>
+		
+	</div>
+</div>
+<main>
+	<div class="container">
+		
+	</div>
+</main>
+
+<footer class="grey">
+	<div class="container">
+		<p>Copyright &copy; 2020, by hikman nurohman</p>
+	</div> 
+</footer>
+
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

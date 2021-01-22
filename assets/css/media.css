@@ -1,0 +1,110 @@
+
+@media only screen and (max-width: 780px){
+	body{font-size: 14px;overflow-x: hidden;}
+	.btn{padding: 5px 15px;}
+	.user{
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.btnSidenav, .sidenav .logo, .sidenav a i, .account, .chevronDown{
+		display: block;
+	}
+	.sidenav .logo span{
+		animation-name: reverseSidenav;
+	}
+	.sidenav .logo{
+		padding:10px 0;
+		font-size: 18px;
+	}
+	nav{
+		position: fixed;
+		width:200px;
+		display: block;
+		height:100%;
+		background: white;
+		top:0;
+		left:0;
+		padding:15px;
+		padding-top: 10px;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: flex-start;
+		animation-name: sidenav;
+		animation-duration: 0.5s;
+		box-shadow: 3px 0 15px 0 rgba(0,0,0,0.1);
+		overflow-y: scroll;
+		scrollbar-width:none;
+		-ms-overflow-style:none;
+	}
+	nav::-webkit-scrollbar{display: none;}
+	nav a{
+		border-radius: 0;
+		color:black;
+		padding:5px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		margin:10px 0;
+	}
+	nav a:hover{
+		border-radius: 5px;
+		animation-name: none;
+		box-shadow: none;
+		color:white;
+		background:rgba(120,11, 117,0.5);
+
+	}
+	nav a:hover i{color:white;}
+
+	nav a.active{
+		background:rgba(120,11, 117,0.5);
+		color:white;
+	}
+	nav a.active i{
+		background:rgba(120,11, 117,0.1);
+		color:white;
+	}
+	nav a i{
+		width:40px;
+		padding:10px;
+		border-radius: 5px;
+		background:rgba(120,11, 117,0.1);
+		font-size: 14px;
+		margin-right: 10px;
+		color:#593e93;
+	}
+	.banner{
+		width:400px;
+		margin-right: -50px;
+	}
+	.slogan h1{
+		font-size: 34px;
+	}
+
+
+}
+@media only screen and (max-width: 500px){
+}
+@media only screen and (max-width: 240px){
+	nav{
+		width: 100%;
+	}
+
+	.sidenav .logo{
+		position: fixed;
+		height:50px;
+		background:white;
+		width:90%;
+		margin-top: -10px;
+		z-index: 100000;
+		padding:15px 0;
+	}
+	.sidenav .logo span{
+		right:0px;
+		top:15px;
+	}
+	.sidenav .account{
+		margin-top: 50px;
+	}
+}
